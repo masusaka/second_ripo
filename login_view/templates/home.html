@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>ホーム画面です</h1>
+{% if user.is_authenticated %}
+<p>ようこそ!{{value}}さん</p>
+{% endif %}
+{% endblock %}
